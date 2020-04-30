@@ -1,0 +1,20 @@
+.side-bar
+  .side-bar__user-name
+    .top-items
+      %p.top-items__name
+        kei
+      %ul.top-items__icons
+        %li.top-items__icons--edit
+          = link_to "#", class:"icon"  do
+            = icon 'far', 'edit'
+        %li.top-items__icons--cog
+          = link_to "#", class:"icon"  do
+            = icon 'fas', 'cog'
+  
+  .side-bar__group-list
+    .group
+      %p.group-name
+        techcamp
+      %p.group-message
+        まだメッセージがありません
+ 
