@@ -1,0 +1,38 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info--text
+      %p.title
+        test
+      %p.name
+        Member : kei
+    = link_to "#", class:"edit" do
+      = "edit"
+
+  .chat-main__message-list
+    .message
+      .message__main
+        .message__main--talker
+          %p kei
+        .message__main--date
+          %p 2020/4/30(Thu) 17:00:00
+      .message__text
+        %p おはよう！
+
+
+    .message-2
+      .message__main
+        .message__main--talker
+          %p kei
+        .message__main--date
+          %p 2020/5/1(Fri) 9:00:00
+      .message__text
+        %p 今日は朝から腫れ！
+
+  .chat-main__message-form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}    
+      %input{type: "submit", class: "submit-btn"}
