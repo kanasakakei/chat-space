@@ -2,13 +2,13 @@
   .side-bar__user-name
     .top-items
       %p.top-items__name
-        kei
+        = current_user.name
       %ul.top-items__icons
         %li.top-items__icons--edit
           = link_to "#", class:"icon"  do
             = icon 'far', 'edit'
         %li.top-items__icons--cog
-          = link_to "#", class:"icon"  do
+          = link_to edit_user_path(current_user), class:"icon"  do
             = icon 'fas', 'cog'
   
   .side-bar__group-list
