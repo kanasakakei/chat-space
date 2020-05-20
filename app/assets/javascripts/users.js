@@ -64,11 +64,15 @@ $(function() {
     console.log("イベント発火");
     const username = $(this).attr("data-user-name");
     const userid = $(this).attr("data-user-id");
-    $(this).parent().remove();
-      deleteUser(username, userid)
-      addUser(userid);
+    $(this)
+      .parent()
+      .remove();
+    deleteUser(username, userid);
+    addUser(userid);
   });
-  $(document).on("click",".chat-group-user__btn--remove", function(){
-    $(this).parent().remove();
+  $(document).on("click", ".chat-group-user__btn--remove", function(){
+    $(this)
+      .parent()
+      .remove();
   });
 });
