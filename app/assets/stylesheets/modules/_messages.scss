@@ -61,6 +61,11 @@ $color: white;
   margin-bottom: 40px;
   width: 260px;
   margin: auto;
+  
+  a {
+    text-decoration: none;
+  }
+
   .group-name{
     font-size: 15px;
     color: $color
